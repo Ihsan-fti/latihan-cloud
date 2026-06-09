@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Input Jadwal Kuliah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>📚 Jadwal Kuliah</h1>
+
+    <form id="jadwalForm">
+        <label>Nama Mata Kuliah</label>
+        <input type="text" id="matkul" required>
+
+        <label>Hari</label>
+        <select id="hari" required>
+            <option value="">-- Pilih Hari --</option>
+            <option>Senin</option>
+            <option>Selasa</option>
+            <option>Rabu</option>
+            <option>Kamis</option>
+            <option>Jumat</option>
+            <option>Sabtu</option>
+        </select>
+
+        <label>Jam</label>
+        <input type="time" id="jam" required>
+
+        <label>Ruang</label>
+        <input type="text" id="ruang" required>
+
+        <button type="submit">Tambah Jadwal</button>
+    </form>
+
+    <div class="notif" id="notif"></div>
+
+    <h2>Daftar Jadwal</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Mata Kuliah</th>
+                <th>Hari</th>
+                <th>Jam</th>
+                <th>Ruang</th>
+            </tr>
+        </thead>
+        <tbody id="jadwalList">
+            <!-- Data akan muncul di sini -->
+        </tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
